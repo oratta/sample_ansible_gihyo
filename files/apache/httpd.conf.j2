@@ -1,0 +1,7 @@
+	{% if is_development %}
+  EnableMMAP Off
+  EnableSendfile Off
+  {% else %}
+  EnableMMAP On
+  EnableSendfile On
+  {% endif %}

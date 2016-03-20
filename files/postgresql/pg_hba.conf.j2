@@ -1,0 +1,6 @@
+# TYPE  db_databaseUSER  ADDRESS   METHOD
+
+# "local" is for Unix domain socket connections only
+local all postgres  peer
+local {{ db_database }} {{ db_username }} md5
+local {{ db_test_database }} {{ db_username }} md5
